@@ -1,0 +1,18 @@
+const array = [1,2,3,4,5];
+console.log(array);
+const array = [1, 'blabla', {}, 4];
+console.log(array[0]);
+
+const objects =[
+  {name: '멍멍이', name: '야옹이'}
+];
+
+//새로운 항목 추가
+objects.push ({name: '멍뭉이'});
+
+//배열의 크기를 조회
+console.log(objects.length);
+
+console.log(objects);
+console.log(object[0]);
+console.log(object[1]);
