@@ -1,0 +1,24 @@
+const dog = {
+  name: '비글예서',
+  sound: '멍멍!으르릉컹컹',
+  say: function() {
+    console.log(this.sound);
+  }
+}
+//this는 dog를 가리킨다
+//say(){}로 나타낼 수도 있다
+//화살표 함수로 하면 this가 인식이 되지 않는다
+
+const cat = {
+  name: '야옹이',
+  sound: '야옹 ~'
+}
+
+cat.say = dog.say;
+//도그 세이를 캣 세이로 대변한다
+//dog.say();
+//cat.say();
+
+const catSay = cat.say;
+catSay();
+//캣세이에 아무것도 들어있지 않으니 아무것도 나오지 않는다
