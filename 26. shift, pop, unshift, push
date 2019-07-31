@@ -1,0 +1,27 @@
+//shift는 첫 번째 원소가 빠져나온다
+const numbers = [10, 20, 30, 40];
+const value = numbers.shift();
+console.log(value);
+console.log(numbers);
+
+//pop은 끝에서 꺼낸다
+const value = numbers.pop();
+
+//unshift 앞에다가 새롭게 집어넣는다
+numbers.unshift(5);
+console.log(numbers);
+
+//push는 뒤에다가 새롭게 원소를 집어넣는다 
+
+//concat 여러개의 배열을 하나의 배열로 합쳐준다
+//기존 배열을 바꾸거나 하지 않는다
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+
+const concated = arr1.concat(arr2);
+console.log(concated);
+
+//join 배열안에 있는 것은 문자열로 합쳐준다
+const array = [1, 2, 3, 4, 5];
+console.log(array.join());
+console.log(array.join(' '));
