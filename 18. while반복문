@@ -1,0 +1,19 @@
+let i = 0;
+
+while (i < 10) {
+  console.log(i);
+  i++;
+}
+//조건이 false가 되게 해야한다
+//while문 쓸때 단순히 숫자 비교가 아닌 까다로운 경우
+
+let i = 0;
+let isFun = false;
+
+while (!isFun) {
+  console.log(i);
+  i++;
+  if (i === 30) {
+    isFun = true;
+  }
+}
