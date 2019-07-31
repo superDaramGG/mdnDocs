@@ -1,0 +1,14 @@
+const numbers = [10, 20, 30, 40];
+//splice 특정 항목 제거 해당 항목 명시 
+//기존 배열을 건드린다.
+const index = numbers.indexOf(30);
+console.log(index);
+const spliced = numbers.splice(index, 1);
+console.log(spliced);
+console.log(numbers);
+
+//slice 기존 배열을 건드리지 않는다.
+const numbers = [10, 20, 30, 40];
+const sliced = numbers.slice(0, 2);
+console.log(sliced);
+console.log(numbers);
