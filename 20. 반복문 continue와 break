@@ -1,0 +1,7 @@
+for(let i = 0; i < 10; i++) {
+  if(i === 2) continue;
+  //만족하면 바로 skip 시켜버린다.
+  console.log(i);
+  if(i === 5) break;
+  //바로 바깥으로 끝내버린다.
+}
