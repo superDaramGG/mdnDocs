@@ -1,0 +1,25 @@
+//short-circuit evaluation
+console.log(true && 'hello');
+console.log(false && 'hello');
+//true일경우 앞에 hello가 나오고
+//false일경우 나오지 않는다
+
+const namelessDog = {
+  name: '',
+};
+
+function getName(animal) {
+  const name = animal && animal.name;
+  return name || '이름이 없는 동물입니다.';
+}
+
+const name = getName(namelessDog);
+console.log(name);
+
+//or
+console.log(false || 'hello');
+console.log('' || '이름없다');
+
+console.log(1 || '음?');
+//true면 뒤에값을 보지도 않는다
+console.log(true || '여기안본다');
