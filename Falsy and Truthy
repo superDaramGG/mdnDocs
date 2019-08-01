@@ -1,0 +1,2 @@
+//undefined, null, 0, '', NaN, false ==> falsy
+//3, 'hello' []. {} ===> truthy
