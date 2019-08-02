@@ -1,0 +1,15 @@
+//호이스팅은 피하는게 좋다 
+
+myFunction();
+
+function myFunction() {
+  console.log('helloworld');
+}
+
+//undefined
+var number;
+console.log(number);
+var number = 2;
+
+//의도치 않는 결과물이 나올까 해서
+//자바스크립트에서 발생하는 현상
