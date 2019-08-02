@@ -1,4 +1,14 @@
 //조건문 더 스마트하게 쓰기
+function heroNames(hero) {
+  if (hero === '캡틴아메리카') return '크리스 에반스';
+  if (hero === '아이언맨') return '로버트 다우니 주니어';
+  if (hero === '닥터스트레인지') return '컴버배치';
+  return '...아무도 없어요';
+}
+
+console.log(heroNames('아이언맨'));
+
+
 function isAnimal(text) {
   const animals = ['고양이','개','거북이','너구리'];
   return animals.includes(text);
