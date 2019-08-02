@@ -1,0 +1,38 @@
+//여러개를 동시에 처리하게끔 하는
+const getDog = async () => {
+  await sleep(100);
+  return '멍멍이';
+};
+
+const getRabbit = async () => {
+  await sleep(500);
+  return '토끼';
+};
+
+const getTurtle = async () => {
+  await sleep(3000);
+  return '거북이';
+};
+
+async function process() {
+  const start = Date.now();
+  const results = await Promise.all([getDog(), getRabbit(), getTurtle()]);
+  console.log(Date.now() - start);
+  console.log(results);
+}
+
+//꺼내고 싶을 때 
+
+async function process() {
+  const start = Date.now();
+  const [dog, rabbit, turtle] = await Promise.all([getDog(), getRabbit(), getTurtle()]);
+}
+
+//promise.race 배열을 등록하고 가장 빨리 끝난거 하나만 나온다
+async function process() {
+  const start = Date.now();
+  const first = await Promise.race([getDog(), getRabbit(), getTurtle()]);
+}
+
+//promise all은 전체중에 하나가 에러 발생하면 다 에러 발생한다.
+//promise race은 가장 빠른 것중에 하나가 에러나면 에러가 난다 
