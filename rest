@@ -1,0 +1,19 @@
+//rest
+const purpleCuteSlime = {
+  name: '슬라임',
+  attribute: 'cute',
+  color: 'purple'
+};
+
+const { color, ...rest } = purpleCuteSlime;
+console.log(color);
+console.log(rest);
+
+//배열에서
+//배열에서 rest는 맨 마지막에 와야한다
+const numbers = [0, 1, 2, 3, 4, 5, 6];
+
+const [one, ...rest] = numbers;
+console.log(one);
+console.log(two);
+console.log(rest);
