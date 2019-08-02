@@ -1,0 +1,13 @@
+//파라미터로 넣어준다
+function calculateCircleArea(r = 1) {
+  return Math.PI * r * r;
+}
+
+const area = calculateCircleArea();
+console.log(area);
+
+//대신 이렇게 만들수도 있다 
+const calculateCircleArea = (r = 1) => Math.PI * r * r;
+
+const area = calculateCircleArea();
+console.log(area);
